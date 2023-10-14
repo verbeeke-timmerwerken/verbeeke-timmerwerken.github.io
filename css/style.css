@@ -592,3 +592,9 @@
     font-weight: bold; /* Change the font weight on hover if needed */
 }
 
+
+@media (max-width: 576px) {
+    .about-me-image {
+        padding: 0 !important;
+    }
+}
