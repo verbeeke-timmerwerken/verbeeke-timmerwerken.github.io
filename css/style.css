@@ -77,6 +77,10 @@
     transition: .5s;
 }
 
+.notvis {
+    visibility: hidden !important;
+}
+
 .top-bar {
     height: 45px;
     border-bottom: 1px solid rgba(255, 255, 255, .07);
@@ -89,6 +93,10 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+}
+
+.navbar-brand {
+    padding: 20px 0px !important;
 }
 
 .navbar .navbar-nav .nav-link {
