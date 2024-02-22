@@ -606,3 +606,90 @@
         padding: 0 !important;
     }
 }
+
+@media (max-width: 767px) {
+    .projects-carousel .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .projects-carousel .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+  }
+  
+  .projects-carousel .carousel-inner .carousel-item.active,
+  .projects-carousel .carousel-inner .carousel-item-next,
+  .projects-carousel .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  /* medium and up screens */
+  @media (min-width: 768px) {
+    
+    .projects-carousel .carousel-inner .carousel-item-end.active,
+    .projects-carousel .carousel-inner .carousel-item-next {
+      transform: translateX(33.33%);
+    }
+    
+    .projects-carousel .carousel-inner .carousel-item-start.active, 
+    .projects-carousel .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33%);
+    }
+  }
+  
+  .projects-carousel .carousel-inner .carousel-item-end,
+  .projects-carousel .carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+  }
+  
+  
+  
+  /* remove */
+  @media (min-width: 768px) {
+  .carousel.projects-carousel {
+      margin: 50px auto;
+      padding: 0 70px;
+  }
+  }
+  
+  .carousel.projects-carousel .carousel-control {
+      height: 44px;
+      width: 40px;
+      background: #00A0DA ;	
+      margin: auto 0;
+      border-radius: 4px;
+      opacity: 0.8;
+  }
+  .carousel.projects-carousel .carousel-control:hover {
+      background: #00A0DA ;
+      opacity: 1;
+  }
+  .carousel.projects-carousel .carousel-control i {
+      font-size: 36px;
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      margin: -19px 0 0 0;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      color: #fff;
+      text-shadow: none;
+      font-weight: bold;
+  }
+  
+  .carousel.projects-carousel .carousel-control.left i {
+      margin-left: -2px;
+  }
+  .carousel.projects-carousel .carousel-control.right i {
+      margin-right: -4px;
+  }
+
+  .carousel.projects-carousel .img-fluid {
+    width: 90%;
+  }
+  
+  .carousel.projects-carousel .causes-overlay {
+    width: 90%;
+    margin-left: 23px;
+  }
+  
